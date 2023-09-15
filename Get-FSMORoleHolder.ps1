@@ -1,3 +1,5 @@
+#Requires –Modules ActiveDirectory
+
 ﻿Function Get-FSMORoleHolder {
     #Get information from domain and forest
     $InfRidPdc = Get-ADDomain | Select-Object InfrastructureMaster, RIDMaster, PDCEmulator
